@@ -1,0 +1,15 @@
+ion-side-menus
+    ion-pane(ion-side-menu-content)
+        .bar.bar-positive
+            button.button.button-icon.icon.ion-navicon(menu-toggle="left")
+        ion-nav-view(name='mainContent' animation='slide-left-right')
+    ion-side-menu(side=left)
+        header.bar.bar-header.bar-positive
+            h1.title Elite Schedule
+        ion-content.has-header
+            ion-list
+                ion-item(nav-clear menu-close ui-sref="home.leagues") Home
+                ion-item(nav-clear menu-close ui-sref="app.teams") Teams
+                ion-item(nav-clear menu-close ui-sref="app.standings") Standings
+                ion-item(nav-clear menu-close ui-sref="app.locations") Locations
+                ion-item(nav-clear menu-close ui-sref="app.rules") Rules
